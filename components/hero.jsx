@@ -1,13 +1,35 @@
 "use client";
+export function Video() {
+  return (
+    <video
+      autoPlay
+      loop
+      muted
+      playsInline
+      className="absolute inset-0 w-full h-full object-cover"
+    >
+      <source
+        src="https://cdn.pixabay.com/video/2021/08/06/84086-584871133_large.mp4"
+        type="video/mp4"
+      />
+      <track
+        src="/path/to/captions.vtt"
+        kind="subtitles"
+        srcLang="en"
+        label="English"
+      />
+      Your browser does not support the video tag.
+    </video>
+  );
+}
 
 export default function Hero() {
   return (
     <div className="relative isolate overflow-hidden bg-gray-900 pb-16 pt-14 sm:pb-20">
-      <img
-        alt=""
-        src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2830&q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply"
-        className="absolute inset-0 -z-10 h-full w-full object-cover"
-      />
+      <div className="absolute inset-0 -z-10">
+        <Video />
+      </div>
+
       <div
         aria-hidden="true"
         className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
@@ -22,36 +44,35 @@ export default function Hero() {
       </div>
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
-          <div className="hidden sm:mb-8 sm:flex sm:justify-center">
+          {/* <div className="hidden sm:mb-8 sm:flex sm:justify-center">
             <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-400 ring-1 ring-white/10 hover:ring-white/20">
-              Announcing our next round of funding.{" "}
               <a href="#" className="font-semibold text-white">
                 <span aria-hidden="true" className="absolute inset-0" />
                 Read more <span aria-hidden="true">&rarr;</span>
               </a>
             </div>
-          </div>
+          </div> */}
           <div className="text-center">
             <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
-              Deploy to the cloud with confidence
+              We wire it all together
             </h1>
-            <p className="mt-6 text-lg leading-8 text-gray-300">
-              Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
-              lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
-              fugiat aliqua.
+            <p className="mt-6 text-lg leading-8 text-gray-200">
+              We offer comprehensive structured cabling and network equipment
+              installation services for both commercial and residential
+              properties
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
                 href="#"
                 className="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
               >
-                Get started
+                Know more
               </a>
               <a
                 href="#"
                 className="text-sm font-semibold leading-6 text-white"
               >
-                Live demo <span aria-hidden="true">→</span>
+                Get a quote <span aria-hidden="true">→</span>
               </a>
             </div>
           </div>
