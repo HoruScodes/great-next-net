@@ -23,39 +23,39 @@ import ServiceImage6 from "@/images/services/networking.png";
 const Services = () => {
   const features = [
     {
-      name: "Push to deploy.",
+      name: "Fiber Optic Cable installation.",
       description:
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit aute id magna.",
+        "Need fiber optic cabling? We have got you covered. Contact us for installation, termination, splicing, and equipment supply at wholesale rates.",
       image: ServiceImage1,
     },
     {
-      name: "SSL certificates.",
+      name: "Network cabling.",
       description:
-        "Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.",
+        "Upgrade your network with our expert cabling solutions. We install Cat 5e, Cat 6, 6A, and Cat 7 data cables for commercial businesses all over Canada and the USA.",
       image: ServiceImage2,
     },
     {
-      name: "Simple queues.",
+      name: "Electrical service.",
       description:
-        "Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus.",
+        "Your trusted electrical partner for all your needs. From routine maintenance to emergency repairs, our experienced electricians provide top-quality electrical services for homes and businesses. ",
       image: ServiceImage3,
     },
     {
-      name: "Advanced security.",
+      name: "Telephone lines.",
       description:
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit aute id magna.",
+        "We provide professional telephone line installation and troubleshooting services for both residential and commercial customers, all over Canada and some parts of the USA.",
       image: ServiceImage4,
     },
     {
-      name: "Powerful API.",
+      name: "CCTV Camera installation.",
       description:
-        "Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.",
+        "Protect your business with Greatnet's expert CCTV installation. Enjoy free site surveys and personalized security plans designed to meet your specific needs.",
       image: ServiceImage5,
     },
     {
-      name: "Database backups.",
+      name: "Structured cabling.",
       description:
-        "Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. ",
+        "Future-proof your business with our advanced structured cabling solutions. Our expert installers provide tailored consultations to ensure your network meets the demands. ",
       image: ServiceImage6,
     },
   ];
@@ -68,12 +68,12 @@ const Services = () => {
             Everything you need
           </h2> */}
           <p className="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
-            Services
+            Solutions we offer
           </p>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores
-            impedit perferendis suscipit eaque, iste dolor cupiditate
-            blanditiis.
+            Our team of skilled IT professionals at Great Network delivers
+            innovative solutions and exceptional support to help you optimize
+            your technology infrastructure and achieve your business goals
           </p>
         </div>
       </div>
