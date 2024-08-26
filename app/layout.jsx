@@ -1,5 +1,6 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
+import clsx from "clsx";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -10,8 +11,13 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
-    </html>
+    <>
+      <html
+        lang="en"
+        className={clsx("scroll-smooth  antialiased", inter.variable)}
+      >
+        <body className="flex h-full bg-white flex-col">{children}</body>
+      </html>
+    </>
   );
 }
