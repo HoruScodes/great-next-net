@@ -34,10 +34,10 @@ const Header = () => {
 
   const getTextColor = () => {
     if (currentPage === "/about") {
-      return "text-black-600";
+      return "text-gray-600";
     }
     if (currentPage === "/services") {
-      return "text-black-600";
+      return "text-gray-600";
     }
 
     return "text-white";
